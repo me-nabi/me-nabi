@@ -1,8 +1,6 @@
 name: Metrics
 on:
-  # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
-  # Allow manual trigger
   workflow_dispatch:
 jobs:
   github-metrics:
@@ -12,8 +10,16 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: header, activity, community, repositories, metadata
+          
+          # STRIPPED DOWN BASE: 
+          # Removed 'header' (avatar/calendar) and 'community' (followers/following)
+          # Keeps only Commits (Activity) and Total Repos (Repositories)
+          base: activity, repositories
           config_timezone: Asia/Kolkata
+          
+          # LANGUAGES ONLY:
+          # Keeps the bar graph and your top 5 languages
           plugin_languages: yes
           plugin_languages_colors: github
-          plugin_languages_limit: 8
+          plugin_languages_limit: 5
+          plugin_languages_details: percentage
