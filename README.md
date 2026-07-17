@@ -63,8 +63,8 @@ I'm an AI Engineer graduating in 2026, passionate about building AI-driven solut
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <!-- This links to the static image automatically updated by your GitHub Action -->
-  <img src="./github-metrics.svg" width="800" alt="GitHub Metrics" />
+  <img src="./custom-stats.svg" alt="Custom Stats" />
+  <img src="./github-languages.svg" alt="Language Stats" />
 </div>
 
 <br/>
