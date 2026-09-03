@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Hi%20there%20👋,%20I%20am%20Md%20Ehtasham%20Nabi&fontSize=36&fontColor=fff&animation=twinkling&fontAlignY=32&desc=an%20AI%20Engineer&descAlignY=55&descSize=20" width="100%"/>
+  <img src="./banner_smooth.gif" width="100%"/>
 </div>
 
 <div align="center">
